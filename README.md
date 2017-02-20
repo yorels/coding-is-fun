@@ -1,2 +1,2 @@
 # coding-is-fun
-dev samples
+development samples (Spring, MVN, Java 8, Rest WS)
