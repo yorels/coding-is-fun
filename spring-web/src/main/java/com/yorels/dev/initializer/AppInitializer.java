@@ -1,4 +1,4 @@
-package mx.yorels.dev.initializer;
+package com.yorels.dev.initializer;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
