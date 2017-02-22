@@ -13,11 +13,11 @@ public class Application {
 
         System.out.println("Running App..........");
 
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
+        ApplicationContext appContext = new ClassPathXmlApplicationContext(
                 "applicationContext.xml"
         );
 
-        CustomerService service = applicationContext.getBean("service", CustomerService.class);;
+        CustomerService service = appContext.getBean("service", CustomerService.class);
 
         System.out.println("\t\t\t" + service.findAll().get(0).getFirstname());
         System.out.println("End App..............");

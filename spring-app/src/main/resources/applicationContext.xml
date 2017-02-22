@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="service" class="com.yorels.service.CustomerServiceImpl">
-        <property name="customerRepository" ref="customerRepo"></property>
-    </bean>
+    <bean name="service" class="com.yorels.service.CustomerServiceImpl" autowire="constructor"></bean>
 
-    <bean name="customerRepo" class="com.yorels.data.HibernateCustomerRepositoryImpl"/>
+    <!-- <bean name="customerRepository" class="com.yorels.data.JPACustomerRepositoryImpl"/> -->
+
+    <bean name="customerRepository" class="com.yorels.data.HibernateCustomerRepositoryImpl"/>
 
 </beans>
