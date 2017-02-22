@@ -1,6 +1,7 @@
 package com.yorels.service;
 
 import com.yorels.model.Customer;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
