@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yorels.dev</groupId>
-    <artifactId>spring-training</artifactId>
+    <artifactId>spring-training-xml</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-data</module>
