@@ -10,6 +10,7 @@
         <module>spring-model</module>
         <module>spring-service</module>
         <module>spring-web</module>
+        <module>spring-app</module>
     </modules>
     <packaging>pom</packaging>
 
