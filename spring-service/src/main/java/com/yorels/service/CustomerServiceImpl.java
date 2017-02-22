@@ -13,20 +13,21 @@ import java.util.List;
 @Service("service")
 public class CustomerServiceImpl implements CustomerService {
 
+
     private CustomerRepository customerRepository;
 
     @Autowired
-    public void setCustomerRepository(CustomerRepository customerRepository) {
+    public void customerRepository(CustomerRepository customerRepository) {
         System.out.println("setter component scan");
         this.customerRepository = customerRepository;
     }
-
+/*
     @Autowired
     public CustomerServiceImpl(CustomerRepository customerRepository) {
         System.out.println("constructor component scan");
         this.customerRepository = customerRepository;
     }
-
+*/
     public List<Customer> findAll(){
         return customerRepository.findAll();
     }

@@ -10,8 +10,8 @@ import java.util.List;
 /**
  * Created by yoel.gallegos on 21/02/2017.
  */
-@Repository
-public class JPACustomerRepositoryImpl implements CustomerRepository {
+@Repository("jpaRepo")
+public class CustomerRepositoryImpl implements CustomerRepository {
 
     public List<Customer> findAll() {
         List<Customer> customers = new ArrayList<>();
