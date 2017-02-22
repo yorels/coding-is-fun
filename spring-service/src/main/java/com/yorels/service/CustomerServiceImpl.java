@@ -1,4 +1,8 @@
-package com.yorels.dev;
+package com.yorels.service;
+
+import com.yorels.data.CustomerRepository;
+import com.yorels.data.HibernateCustomerRepositoryImpl;
+import com.yorels.model.Customer;
 
 import java.util.List;
 

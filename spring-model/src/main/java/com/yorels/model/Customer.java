@@ -1,4 +1,4 @@
-package com.yorels.dev;
+package com.yorels.model;
 
 /**
  * Created by yoel.gallegos on 21/02/2017.

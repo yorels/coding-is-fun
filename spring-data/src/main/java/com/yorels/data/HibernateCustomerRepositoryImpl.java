@@ -1,4 +1,6 @@
-package com.yorels.dev;
+package com.yorels.data;
+
+import com.yorels.model.Customer;
 
 import java.util.ArrayList;
 import java.util.List;
