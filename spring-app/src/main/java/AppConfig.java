@@ -1,7 +1,4 @@
-import com.yorels.data.CustomerRepository;
-import com.yorels.data.HibernateCustomerRepositoryImpl;
-import com.yorels.service.CustomerService;
-import com.yorels.service.CustomerServiceImpl;
+import com.yorels.service.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

@@ -19,8 +19,7 @@ public class HibernateCustomerRepositoryImpl implements CustomerRepository {
     public List<Customer> findAll() {
         List<Customer> customers = new ArrayList<>();
         Customer customer = new Customer();
-        customer.setFirstname("Yorels -> " + predator);
-
+        customer.setFirstname(predator);
         customers.add(customer);
 
         return customers;
