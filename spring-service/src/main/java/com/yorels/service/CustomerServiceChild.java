@@ -1,4 +1,4 @@
-package com.yorels.data;
+package com.yorels.service;
 
 import com.yorels.model.Customer;
 
@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by yoel.gallegos on 21/02/2017.
  */
-public interface CustomerRepository {
+public interface CustomerServiceChild extends CustomerService, CustomerService2{
 
     List<Customer> findAll();
 

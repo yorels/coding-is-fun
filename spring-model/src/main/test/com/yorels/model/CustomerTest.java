@@ -64,7 +64,7 @@ public class CustomerTest {
         System.out.println(cust2.hashCode());
         System.out.println(cust2);
 
-        //There is an issue here, elements should be replaced based on the key.
+        //There is an issue here, elements should be replaced based on the key. We can mess it up between objects.
         Assert.assertEquals(mapa.size(), 1);
     }
 

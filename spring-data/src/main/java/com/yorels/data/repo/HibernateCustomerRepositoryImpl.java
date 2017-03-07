@@ -1,4 +1,4 @@
-package com.yorels.data;
+package com.yorels.data.repo;
 
 import com.yorels.model.Customer;
 import org.springframework.beans.factory.annotation.Value;
