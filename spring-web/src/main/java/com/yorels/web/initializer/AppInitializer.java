@@ -1,4 +1,4 @@
-package mx.yorels.dev.initializer;
+package com.yorels.web.initializer;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -15,7 +15,7 @@ import javax.servlet.ServletRegistration;
  */
 public class AppInitializer implements WebApplicationInitializer {
 
-    private static final String CONFIG_LOCATION = "mx.yorels.dev.config";
+    private static final String CONFIG_LOCATION = "mx.yorels.web.config";
     private static final String MAPPING_URL = "/*";
 
     public void onStartup(ServletContext servletContext) throws ServletException {
