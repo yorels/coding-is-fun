@@ -1,36 +1,26 @@
 package com.yorels.web.initializer;
 
-import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.ContextLoaderListener;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
-
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
+import com.yorels.web.config.AppConfig;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
  * Created by yorels on 2017-02-19.
  */
-public class AppInitializer implements WebApplicationInitializer {
+public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-    private static final String CONFIG_LOCATION = "mx.yorels.web.config";
-    private static final String MAPPING_URL = "/*";
-
-    public void onStartup(ServletContext servletContext) throws ServletException {
-        WebApplicationContext context = getContext();
-        servletContext.addListener(new ContextLoaderListener(context));
-        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
-        dispatcher.setLoadOnStartup(1);
-        dispatcher.addMapping(MAPPING_URL);
+    @Override
+    protected Class<?>[] getRootConfigClasses() {
+        return null;
     }
 
-    private AnnotationConfigWebApplicationContext getContext() {
-        AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.setConfigLocation(CONFIG_LOCATION);
-        return context;
+    @Override
+    protected Class<?>[] getServletConfigClasses() {
+        return new Class[] { AppConfig.class };
     }
 
+    @Override
+    protected String[] getServletMappings() {
+        return new String[] { "/" };
+    }
 
 }
